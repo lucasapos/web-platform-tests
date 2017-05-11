@@ -23,7 +23,7 @@ class WPTServer(object):
         self.proc = subprocess.Popen(
             [os.path.join(self.wpt_root, 'serve'), '--config=' + _CONFIG_FILE],
             stdout=self.devnull,
-            stderr=self.devnull,
+            #stderr=self.devnull,
             cwd=self.wpt_root)
         context = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
         context.verify_mode = ssl.CERT_NONE
