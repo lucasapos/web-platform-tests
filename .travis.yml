@@ -25,6 +25,13 @@ matrix:
       env: TOXENV=py27 HYPOTHESIS_PROFILE=ci SCRIPT=ci_unittest.sh
       addons:
         firefox: "53.0"
+        hosts:
+          - web-platform.test
+          - www.web-platform.test
+          - www1.web-platform.test
+          - www2.web-platform.test
+          - xn--n8j6ds53lwwkrqhv28a.web-platform.test
+          - xn--lve-6lad.web-platform.test
     - python: pypy
       env: TOXENV=pypy HYPOTHESIS_PROFILE=ci SCRIPT=ci_unittest.sh
 script:
